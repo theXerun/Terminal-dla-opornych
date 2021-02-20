@@ -5,6 +5,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \graphicspath{ {./screeny/} }
+\usepackage{subfig}
 \usepackage{float}
 \usepackage{booktabs}
 \usepackage[english, polish]{babel}
@@ -12,6 +13,10 @@
 \usepackage{blindtext}
 \usepackage{xcolor}
 \usepackage{dirtree}
+\usepackage{svg}
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}
 
 \usepackage{hyperref}
 
@@ -56,12 +61,20 @@
 \begin{document}
 
 \begin{titlepage}
+    \null  % Empty line
+    \nointerlineskip  % No skip for prev line
+    \vfill
+    \let\snewpage \newpage
+    \let\newpage \relax
     \maketitle
+    \let \newpage \snewpage
+    \vfill 
+    \break % page break
 \end{titlepage}
 
-\begin{abstract}
+\section*{O czym jest ten dokument?}
     W tym dokumencie postaram się w sposób przystępny przekazać tajniki działania terminala w systemie Linux. Pokażę, że nie jest to nic strasznego i nie trzeba się tego bać. Terminal jest bardzo przydatnym narzędziem, które tylko wygląda nieprzystępnie. Dodatkowo ten dokument może funkcjonować jako baza wiedzy o pewnych komendach i ich prostych przykładach, do której można zajrzeć w dowolnym momencie. Dla ułatwienia takiego użytkowania można skorzystać ze spisu treści, którego elementy po kliknięciu powinny zaprowadzić Cię do odpowiedniego fragmentu. Warto też wspomnieć, że Twój system może się różnić lekko od mojego, więc nie wszystko musi działać lub wyglądać tak samo. Postaram się podawać alternatywy (jeśli takie znam) w przypadku, gdy z jakiegoś powodu dla Ciebie dana komenda nie działa.
-\end{abstract}
+
 \newpage
 {\hypersetup{hidelinks}\tableofcontents}
 \newpage
@@ -72,17 +85,15 @@ Teoretycznie nie ma potrzeby by czytać tą sekcję, została ona tutaj dodana d
 
 \textbf{Linux} jest potocznym określeniem rodziny systemów operacyjnych, czyli w skrócie rozbudowanych zbiorów programów, zarządzających komputerem i umożliwiających wygodną pracę i rozrywkę. Poprawna nazwa brzmi \textbf{GNU/Linux} a samo określenie Linux dotyczy jedynie jądra, na którym system jest zbudowany, ponieważ jednak Linux jest określeniem lepiej rozpowszechnionym, także i ja pozwolę sobie je stosować w odniesieniu do całego systemu.
 
-Linux nazywamy również systemem \textbf{unixopodobnym}. Sama nazwa pochodzi ze zbitki słów Linus (będącego imieniem twórcy) i Unix. Ale cóż to Unix? \textbf{UNIX} to system operacyjny napisany w 1969 w Bell Labs przez Dennisa Ritchie i Kena Thompsona. Był on rewolucyjny z paru względów, ważnym dla nas jest jednak to, że wprowadził standard \textbf{POSIX}, których między innymi właśnie Linux się (mniej więcej) \say{trzyma}. Systemy zbliżone budową do systemu Unix, albo opartych na standardach POSIX, można nazawać unixopodobnymi.
+Linux nazywamy również systemem \textbf{unixopodobnym}. Sama nazwa pochodzi ze zbitki słów Linus (będącego imieniem twórcy) i Unix. Ale cóż to Unix? \textbf{UNIX} to system operacyjny napisany w 1969 w Bell Labs przez Dennisa Ritchie i Kena Thompsona. Był on rewolucyjny z paru względów, ważnym dla nas jest jednak to, że wprowadził standard \textbf{POSIX}, których między innymi właśnie Linux się (mniej więcej) \say{trzyma}. Systemy zbliżone budową do systemu Unix, albo/i opartych na standardach POSIX, można nazwać unixopodobnymi.
 
 Poniższa grafika prezentuje uproszczoną wersję rodziny systemów unixopodobnych. Może nie widać zbyt wiele bez przybliżania, lecz wyraźnie pokazuje to jak rozrosły się systemy tego typu.
 
-\begin{center}
-    \includegraphics[scale=0.3]{Unix_history-simple.svg.png}
-
-    \footnotesize
-    \emph{Grafika od Wikimedia Commons}
-    \normalsize
-\end{center}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Unix_history-simple.svg.png}
+    \caption{Grafika od Wikimedia Commons}
+\end{figure}
 
 Linux nie stanowi produktu jednej firmy, jak np. Windows, jest natomiast wynikiem pracy wielu firm i ogromnej liczby różnych grup ludzi, często działającej na tym polu bezinteresownie (non-profit). GNU/Linux jest bazowym komponentem, na którego podstawie rodzą się inne produkty, nazywane \textbf{dystrybucjami}.
 
@@ -114,13 +125,11 @@ Jądro Linux ma zaimplementowaną \textbf{emulację terminali}. Historycznie ter
 
 Obecnie wbudowana obsługa terminali w GNU/Linuxie umożliwia zarówno zdalną pracę (np. zdalną administrację serwerem), jak i wykorzystanie wielozadaniowości systemu także w środowisku tekstowym (uruchomienie wielu terminali odpowiada funkcjonalnie otwarciu wielu okien, gdzie w czasie gdy jeden program jest zajęty i nie odpowiada, możemy pracować w innym).
 
-\begin{center}
-    \includegraphics[scale=0.5]{przyklad terminal.png}
-
-    \footnotesize
-    \emph{Przykład aplikacji emulującej terminal}
-    \normalsize
-\end{center}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{przyklad terminal.png}
+    \caption{Przykład aplikacji emulującej terminal}
+\end{figure}
 
 Taka budowa ma również skutki dla twórców oprogramowania - umożliwia to napisanie aplikacji która nie ma praktycznie interfejsu, tylko komunikuje się z użytkownikiem za pomocą wypisywanych linijek tekstu, a użytkownik wpisuje polecenia. 
 %Kiedy chcemy mieć aplikację, która wykonuje dokładnie to samo zadanie, ale ma prostszy interfejs, np. wybór wykonywanej akcji z menu, można napisać po prostu nakładkę na nasz pierwotny program, i jego wyjście i wejście przekierować do tej nakładki, zamiast na ekran (czyli terminal). 
@@ -136,6 +145,26 @@ Warto wiedzieć, że do niemalże każdej komendy na systemie Linux istnieje wbu
 Może się to okazać przydatne, jeśli wyjaśnienie interesującej Cię komendy nie istnieje w tym dokumencie, lub uznasz, że obecne nie jest dla Ciebie wystarczające. Nazwa \ttbf{man} \emph{prawdopodobnie} pochodzi od słowa \say{manual}, ale kto wie tbh, równie dobrze może oznaczać człowieka. Do dziś nie wiadomo do końca co poeta miał na myśli. W moim wypadku instrukcje serwowane są w języku angielskim, na niektórych dystrybucjach jednak istnieje również wersja polska tych tekstów.
 
 \subsection{Uruchamianie terminala}
+
+Zależnie od dystrybucji możecie się spotkać z różnymi nazwami aplikacji emulujących terminal. Aby wam ułatwić znalezienie odpowiedniej aplikacji wypiszę nazwy, pod którymi może się ona kryć:
+
+\begin{itemize}
+    \item Terminal
+    \item Konsole
+    \item Terminator
+    \item Yakuake
+    \item Kitty
+    \item xterm
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \subfloat[Ikony aplikacji 'Terminal']{\includesvg[height=2.5cm]{src_fullcolor_legacy_terminals.svg}}
+    \quad
+    \subfloat['Konsole']{\includesvg[height=2.5cm]{utilities-terminal.svg}}
+    \caption{Przykładowe ikony}
+\end{figure}
+
 Po uruchomieniu terminala możecie być słusznie lekko zagubieni. Spotykacie się z jakimiś nazwami w nawiasach, jakimś dolarem i migającym kursorem. Wyjaśnię więc wszystko od początku \dots
 
 Oto przykładowy widok po uruchomieniu aplikacji emulującej terminal na swoim systemie (w moim przypadku to \say{Terminal}):

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.30)  18 FEB 2021 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.30)  20 FEB 2021 15:04
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal dla opornych.tex"
-(/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal dla opornych.tex
+**"/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.tex"
+(/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-04-06> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -99,32 +99,64 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen143
 \Gin@req@width=\dimen144
+) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen145
+\captionmargin@=\dimen146
+\captionwidth=\dimen147
+\caption@tempdima=\dimen148
+\caption@indent=\dimen149
+\caption@parindent=\dimen150
+\caption@hangindent=\dimen151
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count178
+\c@continuedfloat=\count179
+)
+\c@KVtest=\count180
+\sf@farskip=\skip49
+\sf@captopadj=\dimen152
+\sf@capskip=\skip50
+\sf@nearskip=\skip51
+\c@subfigure=\count181
+\c@subfigure@save=\count182
+\c@lofdepth=\count183
+\c@subtable=\count184
+\c@subtable@save=\count185
+\c@lotdepth=\count186
+\sf@top=\skip52
+\sf@bottom=\skip53
 ) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count178
+\c@float@type=\count187
 \float@exts=\toks19
 \float@box=\box45
 \@float@everytoks=\toks20
 \@floatcapt=\box46
 ) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen145
-\lightrulewidth=\dimen146
-\cmidrulewidth=\dimen147
-\belowrulesep=\dimen148
-\belowbottomsep=\dimen149
-\aboverulesep=\dimen150
-\abovetopsep=\dimen151
-\cmidrulesep=\dimen152
-\cmidrulekern=\dimen153
-\defaultaddspace=\dimen154
-\@cmidla=\count179
-\@cmidlb=\count180
-\@aboverulesep=\dimen155
-\@belowrulesep=\dimen156
-\@thisruleclass=\count181
-\@lastruleclass=\count182
-\@thisrulewidth=\dimen157
+\heavyrulewidth=\dimen153
+\lightrulewidth=\dimen154
+\cmidrulewidth=\dimen155
+\belowrulesep=\dimen156
+\belowbottomsep=\dimen157
+\aboverulesep=\dimen158
+\abovetopsep=\dimen159
+\cmidrulesep=\dimen160
+\cmidrulekern=\dimen161
+\defaultaddspace=\dimen162
+\@cmidla=\count188
+\@cmidlb=\count189
+\@aboverulesep=\dimen163
+\@belowrulesep=\dimen164
+\@thisruleclass=\count190
+\@lastruleclass=\count191
+\@thisrulewidth=\dimen165
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/03/22 3.42 The Babel package
  (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
@@ -133,11 +165,11 @@ File: switch.def 2020/03/22 3.42 Babel switching mechanism
 Language: english 2017/06/06 v3.3r English support from the babel system
  (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/03/22 3.42 Babel common definitions
-\babel@savecnt=\count183
-\U@D=\dimen158
+\babel@savecnt=\count192
+\U@D=\dimen166
  (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count184
+\bbl@dirlevel=\count193
 )
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
@@ -148,10 +180,10 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 ) (/usr/share/texlive/texmf-dist/tex/generic/babel-polish/polish.ldf
 Language: polish 2005/03/31 v1.2l Polish support from the babel system
 Package babel Info: Making " an active character on input line 83.
-\pl@left=\dimen159
-\pl@down=\dimen160
-\pl@right=\dimen161
-\pl@temp=\dimen162
+\pl@left=\dimen167
+\pl@down=\dimen168
+\pl@right=\dimen169
+\pl@temp=\dimen170
 )) (/usr/share/texlive/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
 Package: dirtytalk 2010/11/21 A package making "quoting" easier
  (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
@@ -163,30 +195,30 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@dirtytalk@qdepth=\count185
+\c@dirtytalk@qdepth=\count194
 ) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count186
-\c@Blindtext=\count187
-\c@blind@countparstart=\count188
-\blind@countxx=\count189
-\blindtext@numBlindtext=\count190
-\blind@countyy=\count191
-\c@blindlist=\count192
-\c@blindlistlevel=\count193
-\c@blindlist@level=\count194
-\blind@listitem=\count195
-\c@blind@listcount=\count196
-\c@blind@levelcount=\count197
-\blind@mathformula=\count198
-\blind@Mathformula=\count199
-\c@blind@randomcount=\count266
-\c@blind@randommax=\count267
-\c@blind@pangramcount=\count268
-\c@blind@pangrammax=\count269
+\c@blindtext=\count195
+\c@Blindtext=\count196
+\c@blind@countparstart=\count197
+\blind@countxx=\count198
+\blindtext@numBlindtext=\count199
+\blind@countyy=\count266
+\c@blindlist=\count267
+\c@blindlistlevel=\count268
+\c@blindlist@level=\count269
+\blind@listitem=\count270
+\c@blind@listcount=\count271
+\c@blind@levelcount=\count272
+\blind@mathformula=\count273
+\blind@Mathformula=\count274
+\c@blind@randomcount=\count275
+\c@blind@randommax=\count276
+\c@blind@pangramcount=\count277
+\c@blind@pangrammax=\count278
 ) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -205,25 +237,29 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (/usr/share/texlive/texmf-dist/tex/generic/dirtree/dirtree.sty
 Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
  (/usr/share/texlive/texmf-dist/tex/generic/dirtree/dirtree.tex `dirtree' v0.32, 2012/12/11 (jcc)
-\DT@offset=\dimen163
-\DT@width=\dimen164
-\DT@sep=\dimen165
-\DT@all=\dimen166
-\DT@rulewidth=\dimen167
-\DT@dotwidth=\dimen168
-\DTbaselineskip=\dimen169
-\DT@counti=\count270
-\DT@countii=\count271
-\DT@countiii=\count272
-\DT@countiv=\count273
-\DT@indent=\dimen170
-\DT@parskip=\dimen171
-\DT@baselineskip=\dimen172
+\DT@offset=\dimen171
+\DT@width=\dimen172
+\DT@sep=\dimen173
+\DT@all=\dimen174
+\DT@rulewidth=\dimen175
+\DT@dotwidth=\dimen176
+\DTbaselineskip=\dimen177
+\DT@counti=\count279
+\DT@countii=\count280
+\DT@countiii=\count281
+\DT@countiv=\count282
+\DT@indent=\dimen178
+\DT@parskip=\dimen179
+\DT@baselineskip=\dimen180
 )
 File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
- (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/svg/svg.sty
+Package: svg 2020/06/23 v2.02h (include SVG pictures)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2020/04/19 v3.30 KOMA-Script package (loading files)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
@@ -231,7 +267,88 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+) (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+runsystem(uname -s > "terminal-dla-opornych.w18")...executed.
+
+ (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.w18)
+runsystem(rm -- "terminal-dla-opornych.w18")...executed.
+
+)
+\c@svg@param@lastpage=\count283
+\svg@box=\box47
+\c@svg@param@currpage=\count284
+) (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent.sty
+Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen181
+\pgfutil@tempdimb=\dimen182
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box48
+ (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks24
+))
+\pgf@x=\dimen183
+\pgf@y=\dimen184
+\pgf@xa=\dimen185
+\pgf@ya=\dimen186
+\pgf@xb=\dimen187
+\pgf@yb=\dimen188
+\pgf@xc=\dimen189
+\pgf@yc=\dimen190
+\pgf@xd=\dimen191
+\pgf@yd=\dimen192
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count285
+\c@pgf@countb=\count286
+\c@pgf@countc=\count287
+\c@pgf@countd=\count288
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count289
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count290
+\pgfsyssoftpath@bigbuffer@items=\count291
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
@@ -239,22 +356,18 @@ Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen173
-\Hy@linkcounter=\count274
-\Hy@pagecounter=\count275
+\@linkdim=\dimen193
+\Hy@linkcounter=\count292
+\Hy@pagecounter=\count293
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count276
+\Hy@SavedSpaceFactor=\count294
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -262,21 +375,21 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count277
+\c@Hy@tempcnt=\count295
  (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen174
+\XeTeXLinkMargin=\dimen194
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count278
-\Field@Width=\dimen175
-\Fld@charsize=\dimen176
+\Fld@menulength=\count296
+\Field@Width=\dimen195
+\Fld@charsize=\dimen196
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -289,9 +402,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
  (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count279
-\c@Item=\count280
-\c@Hfootnote=\count281
+\Hy@abspage=\count297
+\c@Item=\count298
+\c@Hfootnote=\count299
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -300,8 +413,8 @@ File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count282
-\c@bookmark@seq@number=\count283
+\Fld@listcount=\count300
+\c@bookmark@seq@number=\count301
  (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -309,33 +422,33 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip49
+\Hy@SectionHShift=\skip54
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count284
-\l__pdf_internal_box=\box47
-) (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal dla opornych.aux)
-\openout1 = `"terminal dla opornych.aux"'.
+\l__kernel_color_stack_int=\count302
+\l__pdf_internal_box=\box49
+) (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.aux)
+\openout1 = `terminal-dla-opornych.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -375,25 +488,31 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count285
-\scratchdimen=\dimen177
-\scratchbox=\box48
-\nofMPsegments=\count286
-\nofMParguments=\count287
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count288
-\MPscratchDim=\dimen178
-\MPnumerator=\count289
-\makeMPintoPDFobject=\count290
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count303
+\scratchdimen=\dimen197
+\scratchbox=\box50
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen198
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring ON on input line 56.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box51
+Package hyperref Info: Link coloring ON on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -401,44 +520,44 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count291
+\c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
- (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal dla opornych.out) (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal dla opornych.out)
-\@outlinefile=\write3
-\openout3 = `"terminal dla opornych.out"'.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
+ (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.out) (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.out)
+\@outlinefile=\write4
+\openout4 = `terminal-dla-opornych.out'.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 60.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 70.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 60.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 70.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 60.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 70.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 60.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 70.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 60.
+(Font)              <14.4> on input line 70.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 60.
+(Font)              <10> on input line 70.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 60.
+(Font)              <7> on input line 70.
  [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.65 \newpage
-              [1] (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal dla opornych.toc
+l.78 \newpage
+              [1] (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -449,70 +568,87 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-\tf@toc=\write4
-\openout4 = `"terminal dla opornych.toc"'.
+\tf@toc=\write5
+\openout5 = `terminal-dla-opornych.toc'.
 
  [2]
-<./screeny/Unix_history-simple.svg.png, id=98, 1491.5725pt x 1084.05pt>
+<./screeny/Unix_history-simple.svg.png, id=100, 1491.5725pt x 1084.05pt>
 File: ./screeny/Unix_history-simple.svg.png Graphic file (type png)
 <use ./screeny/Unix_history-simple.svg.png>
-Package pdftex.def Info: ./screeny/Unix_history-simple.svg.png  used on input line 80.
-(pdftex.def)             Requested size: 447.4752pt x 325.21751pt.
- [3]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 95.
+Package pdftex.def Info: ./screeny/Unix_history-simple.svg.png  used on input line 94.
+(pdftex.def)             Requested size: 352.31625pt x 256.05855pt.
+ [3 </home/xerun/Dokumenty/TeX/Terminal dla opornych/./screeny/Unix_history-simple.svg.png>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 106.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [4 </home/xerun/Dokumenty/TeX/Terminal dla opornych/./screeny/Unix_history-simple.svg.png>]
-<./screeny/przyklad terminal.png, id=111, 708.6475pt x 534.99875pt>
+) [4]
+<./screeny/przyklad terminal.png, id=113, 708.6475pt x 534.99875pt>
 File: ./screeny/przyklad terminal.png Graphic file (type png)
 <use ./screeny/przyklad terminal.png>
-Package pdftex.def Info: ./screeny/przyklad terminal.png  used on input line 118.
-(pdftex.def)             Requested size: 354.32289pt x 267.49872pt.
- [5]
+Package pdftex.def Info: ./screeny/przyklad terminal.png  used on input line 130.
+(pdftex.def)             Requested size: 352.31625pt x 265.98848pt.
+ [5 </home/xerun/Dokumenty/TeX/Terminal dla opornych/./screeny/przyklad terminal.png>]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 134.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 143.
 
 
 LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 134.
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 143.
 
-[6 </home/xerun/Dokumenty/TeX/Terminal dla opornych/./screeny/przyklad terminal.png>] [7]
+Package svg Info: Last page of `./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf' is 1 on input line 162.
+(/home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf_tex
+<./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf, id=121, page=1, 950.30742pt x 348.8232pt>
+File: ./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 193.78488pt x 71.1313pt.
+)
+Package svg Info: Last page of `./svg-inkscape/utilities-terminal_svg-tex.pdf' is 1 on input line 164.
+ (/home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/utilities-terminal_svg-tex.pdf_tex
+<./svg-inkscape/utilities-terminal_svg-tex.pdf, id=123, page=1, 39.14626pt x 39.14038pt>
+File: ./svg-inkscape/utilities-terminal_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/utilities-terminal_svg-tex.pdf, page 1>
+Package pdftex.def Info: ./svg-inkscape/utilities-terminal_svg-tex.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 71.14925pt x 71.14838pt.
+) [6 </home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf> </home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/utilities-terminal_svg-tex.pdf
+
+pdfTeX warning: pdflatex (file /home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/utilities-terminal_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 169.
- [8] [9]
-Overfull \hbox (28.9199pt too wide) in paragraph at lines 271--271
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 198.
+ [7] [8] [9]
+Overfull \hbox (28.9199pt too wide) in paragraph at lines 300--300
  []\T1/lmtt/m/n/12 CLionProjects  'GOG Games'   Muzyka   Pobrane     Pulpit            Szablony[] 
  []
 
 
-Overfull \hbox (10.3949pt too wide) in paragraph at lines 271--271
+Overfull \hbox (10.3949pt too wide) in paragraph at lines 300--300
  []\T1/lmtt/m/n/12 Dokumenty       MultiMC      Obrazy   Publiczny   PycharmProjects   Wideo[] 
  []
 
-[10] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 361.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
- (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal dla opornych.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 361.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 361.
-Package rerunfilecheck Info: File `"terminal dla opornych".out' has not changed.
+[10] [11] [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+ (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+Package rerunfilecheck Info: File `terminal-dla-opornych.out' has not changed.
 (rerunfilecheck)             Checksum: 8098E823F7ECBBB46D9F870C6881457E;1116.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 361.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
  ) 
 Here is how much of TeX's memory you used:
- 7733 strings out of 481718
- 116696 string characters out of 5926910
- 405446 words of memory out of 5000000
- 23233 multiletter control sequences out of 15000+600000
- 595729 words of font info for 63 fonts, out of 8000000 for 9000
+ 11006 strings out of 481718
+ 185138 string characters out of 5926910
+ 493906 words of memory out of 5000000
+ 26390 multiletter control sequences out of 15000+600000
+ 585481 words of font info for 60 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 34i,6n,37p,938b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtko10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on "/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal dla opornych.pdf" (13 pages, 437953 bytes).
+ 50i,11n,61p,938b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtko10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on "/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.pdf" (13 pages, 532860 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 701 PDF objects out of 1000 (max. 8388607)
+ 515 compressed objects within 6 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
