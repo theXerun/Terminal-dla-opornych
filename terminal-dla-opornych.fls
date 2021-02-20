@@ -226,6 +226,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmtt12.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmtk10.tfm
 OUTPUT /home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmbx12.tfm
 INPUT /home/xerun/Dokumenty/TeX/Terminal dla opornych/./screeny/Unix_history-simple.svg.png
@@ -237,7 +238,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ts1-lmr12.tfm
 INPUT /home/xerun/Dokumenty/TeX/Terminal dla opornych/./screeny/przyklad terminal.png
 INPUT /home/xerun/Dokumenty/TeX/Terminal dla opornych/./screeny/przyklad terminal.png
 INPUT /home/xerun/Dokumenty/TeX/Terminal dla opornych/./screeny/przyklad terminal.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmtk10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmtko10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /home/xerun/Dokumenty/TeX/Terminal dla opornych/./screeny/src_fullcolor_legacy_terminals.svg

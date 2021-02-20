@@ -191,7 +191,7 @@ Fraza zostaje zamknięta w nawiasach i następuje po niej symbol \ttbf{\$}, któ
 
 Cała fraza oznacza zatem mniej więcej \say{użytkownik na tym komputerze i w tym katalogu wykonuje...}.
 
-\section{Łażenie po świecie - czyli katalogi i pliki}
+\section{Katalogi - czyli łażenie po świecie}
 
 Należy się przyzwyczaić do myślenia, że obsługując terminal zawsze będziemy w jakimś katalogu. Czy to nasz katalog domowy czy katalog z filmami, nasze działania nie są odizolowane od świata. W tej sekcji przedstawię, jak oddziaływać na ten świat i jak się w nim swobodnie poruszać.
 
@@ -235,7 +235,7 @@ Komenda nie jest trudna, jej nazwa może też się kojarzyć z angielskim słowe
 
 I jak już wcześniej wspominałem, nie wpisując argumentu \texttt{\emph{katalog}} otrzymamy wynik dla obecnego katalogu roboczego.
 
-Dzięki tej komendzie dowiemy się również, jak wygląda podstawowa struktura katalogu, co w nim jest, jakie są tutaj typy danych i rozwiążemy zagadkę \say{czy katalogi w ogóle istnieją?}
+Dzięki tej komendzie dowiemy się również, jak wygląda podstawowa struktura katalogu, co w nim jest, jakie są tutaj typy danych itd.
 
 \subsubsection{Niewidoczne rzeczy w katalogach}
 
@@ -347,18 +347,11 @@ drwxr-xr-x. 2 user user 4,0K 01-15 21:51  titles
 \subsection{Zmiana katalogu - \texttt{cd}}
 \label{sec:cd}
 
-To najważniejsza komenda w tej całej sekcji. Dzięki niej zrobisz wszystko i nic.
+To najważniejsza i zarazem najprostsza komenda w tej całej sekcji. Dzięki niej zrobisz wszystko i nic.
 
 \ttbf{cd}, czyli \textbf{c}hange \textbf{d}irectory, to polecenie służące do przemieszczania się między folderami. Poniżej składnia komendy:
 
 \ttbf{cd \emph{katalog}}
-
-Dodatkowo istnieją pewnie stałe nazwy, które są powtarzalne i obecne w każdym folderze:
-
-\begin{itemize}
-    \item \ttbf{..} - aby wejść do katalogu \emph{wyższego} w hierarchii, czyli np. z \ttbf{/Wideo/Filmy} do \ttbf{/Wideo}, zamiast wpisywać całą ścieżkę możemy zastąpić ją tymi dwoma kropkami (\ttbf{cd ..})
-    \item \ttbf{.} - oznacza obecny katalog. Dużo z tym nie zrobimy, bo zmiana katalogu na obecny nie ma za bardzo sensu, ale jest przydatne z innych powodów, o których się dowiesz \textbf{potem}.
-\end{itemize}
 
 \subsubsection{Przykłady}
 
@@ -369,22 +362,46 @@ CLionProjects  'GOG Games'   Muzyka   Pobrane     Pulpit            Szablony
 Dokumenty       MultiMC      Obrazy   Publiczny   PycharmProjects   Wideo
 \end{verbatim}
 
-Jeśli chcemy wejść do katalogu Wideo, możemy wpisać:
+\begin{enumerate}
+    \item Jeśli chcemy wejść do katalogu Wideo, możemy wpisać:
 
-\begin{console1}
-    cd Wideo
-\end{console1}
+    \begin{console1}
+        cd Wideo
+    \end{console1}
 
-albo
+    \item albo pełną ścieżkę:
 
-\begin{console1}
-    cd /home/user/Wideo
-\end{console1}
+    \begin{console1}
+        cd /home/user/Wideo
+    \end{console1}
 
-Dodatkowo po wpisaniu:
+    \item A po wpisaniu:
 
-\ttbf{[user@linux Wideo]\$ cd ..}
+    \ttbf{[user@linux Wideo]\$ cd ..}
+    
+    wrócimy do katalogu \emph{wyżej} (czyli w tym wypadku $\sim$).
+\end{enumerate}
 
-wrócimy do katalogu \emph{wyżej} (czyli w tym wypadku $\sim$).
+\subsection{Tworzenie katalogów - \ttbf{mkdir}}
+
+\section{Pliki - czyli wszystko co powiedziałem wcześniej było kłamstwem}
+
+\subsection{Kopiowanie plików - \ttbf{cp}}
+
+\subsection{Przenoszenie i zmiana nazwy - \ttbf{mv}}
+
+\subsection{Tworzenie nowych plików i zmiana dat - \ttbf{touch}}
+
+\subsection{Usuwanie plików - \ttbf{rm}}
+
+\subsection{Wypisywanie i łączenie treści plików - \ttbf{cat}}
+
+\subsection{Czytanie pliku jak dokumentu - \ttbf{less}}
+
+\subsection{Szukanie plików - \ttbf{find}}
+
+\subsection{'Skróty' i dowiązania - \ttbf{ln}}
+
+\section{Arytmetyka rzeczy - czyli potoki i rury}
 
 \end{document}
