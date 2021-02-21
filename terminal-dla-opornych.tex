@@ -191,6 +191,10 @@ Fraza zostaje zamknięta w nawiasach i następuje po niej symbol \ttbf{\$}, któ
 
 Cała fraza oznacza zatem mniej więcej \say{użytkownik na tym komputerze i w tym katalogu wykonuje...}.
 
+\subsection{Ważna uwaga odnośnie klawisza 'Tab'}
+
+Klawisz 'Tab' jest od teraz Twoim największym przyjacielem. W przyszłych rozdziałach będzie Ci bardzo pomocny. Jego funkcją w terminalu jest \textbf{automatyczne uzupełnianie}, co w praktyce oznacza że po wciśnięciu parę razy tego klawisza dostaniesz prawdopodobnie to czego oczekujesz. Czy to ścieżka do jakiegoś pliku, albo niedokończona komenda, dobrą praktyką jest wciśnięcie 'Tab' parę razy, a on albo dokończy za Ciebie, albo pokaże ci jakie ma alternatywy, a ty zareagujesz odpowiednio. Jeśli to co teraz czytasz brzmi przerażająco, to spokojnie, wszystko będzie dobrze - 'Tab' tu jest i Ci pomoże.
+
 \section{Katalogi - czyli łażenie po świecie}
 
 Należy się przyzwyczaić do myślenia, że obsługując terminal zawsze będziemy w jakimś katalogu. Czy to nasz katalog domowy czy katalog z filmami, nasze działania nie są odizolowane od świata. W tej sekcji przedstawię, jak oddziaływać na ten świat i jak się w nim swobodnie poruszać.
@@ -276,11 +280,11 @@ Komenda \say{\ttbf{ls .}} będzie robić dokładnie to samo co zwykła komenda \
 
 \subsubsection{Opcje}
 \begin{itemize}
-    \item \texttt{a} (all) Wypisuje \emph{wszystkie} elementy w katalogu, nawet te ukryte.
-    \item \texttt{l} (long) Wypisuje dodatkowe dane w kolumnach (uprawnienia, ilość dowiązań, właściciela, grupę, do której należy plik/katalog, rozmiar, datę modyfikacji, nazwę pliku).
-    \item \texttt{h} (human-readable) Pokazuje jednostki bardziej czytelne dla ludzi (np. 2M(egabajty), 1G(igabajt)).
-    \item \texttt{S} (sort by Size) Sortuje wynik po rozmiarze (największy pierwszy).
-    \item \texttt{t} (sort by time) Sortuje wynik po czasie (najnowszy pierwszy).
+    \item \ttbf{a} (all) Wypisuje \emph{wszystkie} elementy w katalogu, nawet te ukryte.
+    \item \ttbf{l} (long) Wypisuje dodatkowe dane w kolumnach (uprawnienia, ilość dowiązań, właściciela, grupę, do której należy plik/katalog, rozmiar, datę modyfikacji, nazwę pliku).
+    \item \ttbf{h} (human-readable) Pokazuje jednostki bardziej czytelne dla ludzi (np. 2M(egabajty), 1G(igabajt)).
+    \item \ttbf{S} (sort by Size) Sortuje wynik po rozmiarze (największy pierwszy).
+    \item \ttbf{t} (sort by time) Sortuje wynik po czasie (najnowszy pierwszy).
 \end{itemize}
 
 Komendy można łączyć ze sobą jednocześnie, np. \ttbf{-al} wypisuje wszystkie, nawet ukryte, elementy w kolumnach razem z dodatkowymi danymi. Kolejność nie ma znaczenia, \ttbf{-al} robi dokładnie to samo co \ttbf{-la}
@@ -384,7 +388,49 @@ Dokumenty       MultiMC      Obrazy   Publiczny   PycharmProjects   Wideo
 
 \subsection{Tworzenie katalogów - \ttbf{mkdir}}
 
+\ttbf{mkdir} służy do tworzenia katalogów. To wszystko. Banalnie prosta komenda robiąca jedną rzecz ~-- coś do czego się musicie przyzwyczaić, bo takich jest wiele.
+
+Składnia:
+
+\ttbf{mkdir \emph{nazwaKatalogu1} [...]}
+
+Te tajemnicze kwadratowe nawiasy \ttbf{[...]} oznaczają ewentualne dodatkowe nazwy katalogów, bo komenda, rzecz jasna, obsługuje tworzenie wielu na raz. Zamiast wpisania samej nazwy katalogu, można też wpisać ścieżkę zakończoną nazwą (całkowitą bądź relatywną do naszej pozycji). Jeśli chcemy stworzyć katalog o wieloczłonowej nazwie to musimy go opatrzyć w cudzysłowie.
+
+\subsubsection{Opcje}
+
+Oczywiście są jakieś dodatkowe (być może przydatne opcje):
+
+\begin{itemize}
+    \item \ttbf{-p} (parent) Tworzy brakujące nieistniejące katalogi nadrzędne jeśli polecenie tego wymaga.
+    \item \ttbf{-v} (verbose) Pokazuje wiadomość potwierdzającą o każdym utworzonym katalogu.
+    \item \ttbf{-m} (mode) Zmienia tryb tworzenia katalogu tak jak w poleceniu \ttbf{chmod}.
+\end{itemize}
+
+\subsubsection{Przykłady}
+
+\begin{enumerate}
+    \item Stworzenie katalogu 'Nowy Folder'.
+    
+    \begin{console1}
+        mkdir ``Nowy Folder``
+    \end{console1}
+
+    \item W stworzonym katalogu 'Nowy Folder' tworzymy katalogi 'Praca domowa' oraz 'Research':
+    
+    \begin{console1}
+        mkdir ``Nowy Folder/Praca domowa`` ``Nowy Folder/Research``
+    \end{console1}
+
+    \item Tworzenie katalogu 'aaaaa' w nieistniejącym katalogu 'bbbbb':
+    
+    \begin{console1}
+        mkdir -p bbbbb/aaaaa
+    \end{console1}
+\end{enumerate}
+
 \section{Pliki - czyli wszystko co powiedziałem wcześniej było kłamstwem}
+
+We wcześniejszych sekcjach pisałem dużo o katalogach, nie byłem jednak do końca szczery. Tak na prawdę wszystko w Linuxie jest plikiem, nawet katalogi. Twój procesor? - plik. Twój RAM? - plik. Twoja myszka lub gładzik? - plik. Wiedza ta jest dość kluczowa do zrozumienia niektórych operacji (niekoniecznie w tym rozdziale ale ogólnie).
 
 \subsection{Kopiowanie plików - \ttbf{cp}}
 

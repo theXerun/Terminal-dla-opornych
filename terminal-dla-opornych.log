@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.30)  20 FEB 2021 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.30)  21 FEB 2021 13:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -564,18 +564,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 3.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 17.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 18.
  [2])
 \tf@toc=\write5
 \openout5 = `terminal-dla-opornych.toc'.
 
  [3]
-<./screeny/Unix_history-simple.svg.png, id=160, 1491.5725pt x 1084.05pt>
+<./screeny/Unix_history-simple.svg.png, id=176, 1491.5725pt x 1084.05pt>
 File: ./screeny/Unix_history-simple.svg.png Graphic file (type png)
 <use ./screeny/Unix_history-simple.svg.png>
 Package pdftex.def Info: ./screeny/Unix_history-simple.svg.png  used on input line 94.
@@ -585,7 +585,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 10
  (/usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [5]
-<./screeny/przyklad terminal.png, id=174, 708.6475pt x 534.99875pt>
+<./screeny/przyklad terminal.png, id=189, 708.6475pt x 534.99875pt>
 File: ./screeny/przyklad terminal.png Graphic file (type png)
 <use ./screeny/przyklad terminal.png>
 Package pdftex.def Info: ./screeny/przyklad terminal.png  used on input line 130.
@@ -597,7 +597,7 @@ LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <12> not available
 
 Package svg Info: Last page of `./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf' is 1 on input line 162.
 (/home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf_tex
-<./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf, id=183, page=1, 950.30742pt x 348.8232pt>
+<./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf, id=198, page=1, 950.30742pt x 348.8232pt>
 File: ./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf , page1 used on input line 56.
@@ -605,7 +605,7 @@ Package pdftex.def Info: ./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.p
 )
 Package svg Info: Last page of `./svg-inkscape/utilities-terminal_svg-tex.pdf' is 1 on input line 164.
  (/home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/utilities-terminal_svg-tex.pdf_tex
-<./svg-inkscape/utilities-terminal_svg-tex.pdf, id=185, page=1, 39.14626pt x 39.14038pt>
+<./svg-inkscape/utilities-terminal_svg-tex.pdf, id=200, page=1, 39.14626pt x 39.14038pt>
 File: ./svg-inkscape/utilities-terminal_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/utilities-terminal_svg-tex.pdf, page 1>
 Package pdftex.def Info: ./svg-inkscape/utilities-terminal_svg-tex.pdf , page1 used on input line 56.
@@ -613,42 +613,52 @@ Package pdftex.def Info: ./svg-inkscape/utilities-terminal_svg-tex.pdf , page1 u
 ) [7 </home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/src_fullcolor_legacy_terminals_svg-tex.pdf> </home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/utilities-terminal_svg-tex.pdf
 
 pdfTeX warning: pdflatex (file /home/xerun/Dokumenty/TeX/Terminal dla opornych/./svg-inkscape/utilities-terminal_svg-tex.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
+>] [8]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 198.
- [8] [9] [10]
-Overfull \hbox (28.9199pt too wide) in paragraph at lines 300--300
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 202.
+ [9] [10]
+Overfull \hbox (28.9199pt too wide) in paragraph at lines 304--304
  []\T1/lmtt/m/n/12 CLionProjects  'GOG Games'   Muzyka   Pobrane     Pulpit            Szablony[] 
  []
 
 
-Overfull \hbox (10.3949pt too wide) in paragraph at lines 300--300
+Overfull \hbox (10.3949pt too wide) in paragraph at lines 304--304
  []\T1/lmtt/m/n/12 Dokumenty       MultiMC      Obrazy   Publiczny   PycharmProjects   Wideo[] 
  []
 
-[11] [12] [13] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
+[11] [12] [13]
+Overfull \hbox (9.95218pt too wide) in paragraph at lines 420--422
+[]\T1/lmtt/b/n/12 [user@linux $\OMS/lmsy/m/n/12 ^^X$\T1/lmtt/b/n/12 ]$ mkdir ``Nowy Folder/Praca domowa`` ``Nowy Folder/Research``
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--422
+
+ []
+
+[14] [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 453.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 453.
  (/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 453.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 453.
 Package rerunfilecheck Info: File `terminal-dla-opornych.out' has not changed.
-(rerunfilecheck)             Checksum: 4616617CEA4FF7B9B3C3AEFA52291C33;2080.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 407.
+(rerunfilecheck)             Checksum: BB39917DCEAB9671FF521A92167F56F6;2302.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 453.
  ) 
 Here is how much of TeX's memory you used:
- 11034 strings out of 481718
- 185493 string characters out of 5926910
- 493906 words of memory out of 5000000
- 26402 multiletter control sequences out of 15000+600000
+ 11044 strings out of 481718
+ 185631 string characters out of 5926910
+ 494907 words of memory out of 5000000
+ 26405 multiletter control sequences out of 15000+600000
  585481 words of font info for 60 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  50i,11n,61p,938b,628s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtko10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on "/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.pdf" (15 pages, 536725 bytes).
+Output written on "/home/xerun/Dokumenty/TeX/Terminal dla opornych/terminal-dla-opornych.pdf" (16 pages, 541654 bytes).
 PDF statistics:
- 770 PDF objects out of 1000 (max. 8388607)
- 582 compressed objects within 6 object streams
- 58 named destinations out of 1000 (max. 500000)
- 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 794 PDF objects out of 1000 (max. 8388607)
+ 604 compressed objects within 7 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 
