@@ -6,14 +6,14 @@
 \contentsline {subsection}{\numberline {1.4}Uruchamianie terminala}{7}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Ważna uwaga odnośnie klawisza 'Tab'}{8}{subsection.1.5}%
 \contentsline {section}{\numberline {2}Katalogi - czyli łażenie po świecie}{9}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Domek czyli \texttt {/home} sweet \texttt {/home}}{9}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Gdzie jestem? - \texttt {pwd}}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.1}Domek czyli \texttt {\textbf {/home}} sweet \texttt {\textbf {/home}} }{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Gdzie jestem? - \texttt {\textbf {pwd}} }{9}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Przykłady}{9}{subsubsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.3}Co jest w moim katalogu? - \texttt {ls} i inne fafarstki}{10}{subsection.2.3}%
 \contentsline {subsubsection}{\numberline {2.3.1}Niewidoczne rzeczy w katalogach}{10}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}Opcje}{11}{subsubsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}Przykłady}{11}{subsubsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.4}Zmiana katalogu - \texttt {cd}}{12}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Zmiana katalogu - \texttt {\textbf {cd}} }{12}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}Przykłady}{13}{subsubsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.5}Tworzenie katalogów - \texttt {\textbf {mkdir}} }{13}{subsection.2.5}%
 \contentsline {subsubsection}{\numberline {2.5.1}Opcje}{14}{subsubsection.2.5.1}%
