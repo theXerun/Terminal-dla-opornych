@@ -97,7 +97,7 @@ Poniższa grafika prezentuje uproszczoną wersję rodziny systemów unixopodobny
 
 Linux nie stanowi produktu jednej firmy, jak np. Windows, jest natomiast wynikiem pracy wielu firm i ogromnej liczby różnych grup ludzi, często działającej na tym polu bezinteresownie (non-profit). GNU/Linux jest bazowym komponentem, na którego podstawie rodzą się inne produkty, nazywane \textbf{dystrybucjami}.
 
-Poszczególne dystrybucje różnią się od siebie mniej lub bardziej wyglądem oraz przeznaczeniem - możemy więc tutaj wybierać pomiędzy dużymi, kompletnymi systemami na domowe biurka, na serwery, do firm a między małymi, lekkimi, a zarazem szybkimi dystrybucjami nadającymi się np. na starsze komputery, czy urządzenia pendrive. Podstawy terminala są jednak niemalże takie same niezależnie od danej dystrybucji. Osobiście piszę ten dokument na dystrybucji o nazwie ``Fedora``, która ``utrzymywana`` jest przez firmę Red Hat, ale większość komend, (a w szczególności tych z pierwszych rozdziałów) działać będzie również na np. Ubuntu.
+Poszczególne dystrybucje różnią się od siebie mniej lub bardziej wyglądem oraz przeznaczeniem -- możemy więc tutaj wybierać pomiędzy dużymi, kompletnymi systemami na domowe biurka, na serwery, do firm a między małymi, lekkimi, a zarazem szybkimi dystrybucjami nadającymi się np. na starsze komputery, czy urządzenia pendrive. Podstawy terminala są jednak niemalże takie same niezależnie od danej dystrybucji. Osobiście piszę ten dokument na dystrybucji o nazwie ``Fedora``, która ``utrzymywana`` jest przez firmę Red Hat, ale większość komend, (a w szczególności tych z pierwszych rozdziałów) działać będzie również na np. Ubuntu.
 
 % TODO Dodać linki
 Jednymi z obecnie najpopularniejszych dystrybucji (w losowej kolejności) są:
@@ -131,7 +131,7 @@ Obecnie wbudowana obsługa terminali w GNU/Linuxie umożliwia zarówno zdalną p
     \caption{Przykład aplikacji emulującej terminal}
 \end{figure}
 
-Taka budowa ma również skutki dla twórców oprogramowania - umożliwia to napisanie aplikacji która nie ma praktycznie interfejsu, tylko komunikuje się z użytkownikiem za pomocą wypisywanych linijek tekstu, a użytkownik wpisuje polecenia. 
+Taka budowa ma również skutki dla twórców oprogramowania -- umożliwia to napisanie aplikacji która nie ma praktycznie interfejsu, tylko komunikuje się z użytkownikiem za pomocą wypisywanych linijek tekstu, a użytkownik wpisuje polecenia. 
 %Kiedy chcemy mieć aplikację, która wykonuje dokładnie to samo zadanie, ale ma prostszy interfejs, np. wybór wykonywanej akcji z menu, można napisać po prostu nakładkę na nasz pierwotny program, i jego wyjście i wejście przekierować do tej nakładki, zamiast na ekran (czyli terminal). 
 
 \subsection{Co to komendy i polecenia?}
@@ -179,7 +179,7 @@ Zacznę więc od wyjaśnienia od lewej do prawej. To enigmatyczne \ttbf{user} to
 
 Następnie widzimy znak \ttbf{@} oraz \ttbf{linux}. To pierwsze po prostu w języku angielskim ``at`` oznacza ``na``, tymczasem \ttbf{linux} oznacza po prostu nazwę systemu albo komputera, na którym się znajdujecie. W luźnym tłumaczeniu cała fraza \ttbf{user@linux} oznacza ``użytkownik na tym systemie``.
 
-Kolejny symbol to \ttbf{$\sim$}. Jest to aktualny katalog, w którym się znajdujesz, ta część będzie się zmieniać zależnie od tego, jak zmienisz lokalizację - przykładowo:
+Kolejny symbol to \ttbf{$\sim$}. Jest to aktualny katalog, w którym się znajdujesz, ta część będzie się zmieniać zależnie od tego, jak zmienisz lokalizację -- przykładowo:
 
 \ttbf{[user@linux Wideo]\$} albo \ttbf{[user@linux Pobrane]\$}
 
@@ -191,22 +191,24 @@ Fraza zostaje zamknięta w nawiasach i następuje po niej symbol \ttbf{\$}, któ
 
 Cała fraza oznacza zatem mniej więcej ``użytkownik na tym komputerze i w tym katalogu wykonuje...``.
 
-\subsection{Ważna uwaga odnośnie klawisza 'Tab'}
+\subsection{Ważna uwaga odnośnie klawisza 'Tab' i strzałek}
 
-Klawisz 'Tab' jest od teraz Twoim największym przyjacielem. W przyszłych rozdziałach będzie Ci bardzo pomocny. Jego funkcją w terminalu jest \textbf{automatyczne uzupełnianie}, co w praktyce oznacza że po wciśnięciu parę razy tego klawisza dostaniesz prawdopodobnie to czego oczekujesz. Czy to ścieżka do jakiegoś pliku, albo niedokończona komenda, dobrą praktyką jest wciśnięcie 'Tab' parę razy, a on albo dokończy za Ciebie, albo pokaże ci jakie ma alternatywy, a ty zareagujesz odpowiednio. Jeśli to co teraz czytasz brzmi przerażająco, to spokojnie, wszystko będzie dobrze - 'Tab' tu jest i Ci pomoże.
+Klawisz 'Tab' jest od teraz Twoim największym przyjacielem. W przyszłych rozdziałach będzie Ci bardzo pomocny. Jego funkcją w terminalu jest \textbf{automatyczne uzupełnianie}, co w praktyce oznacza że po wciśnięciu parę razy tego klawisza dostaniesz prawdopodobnie to czego oczekujesz. Czy to ścieżka do jakiegoś pliku, albo niedokończona komenda, dobrą praktyką jest wciśnięcie 'Tab' parę razy, a on albo dokończy za Ciebie, albo pokaże ci jakie ma alternatywy, a ty zareagujesz odpowiednio. Jeśli to co teraz czytasz brzmi przerażająco, to spokojnie, wszystko będzie dobrze -- 'Tab' tu jest i Ci pomoże.
 
-\section{Katalogi - czyli łażenie po świecie}
+Innymi przydatnymi klawiszami są strzałki. Dzięki nim możesz przemieszczać kursor w tekście (strzałkami lewo -- prawo), jak w większości znanych Ci już pewnie programów, oraz uzyskać dostęp do poprzednio wykonanych komend (strzałkami góra -- dół). Może to być przydatne gdy chcesz wykonać jakieś długie polecenie po kilka razy. Nikomu się nie chce pisać czegoś ponownie, więc najlepiej jest użyć strzałek i wyedytować komendę jeśli jest taka potrzeba.
+
+\section{Katalogi -- czyli łażenie po świecie}
 
 Należy się przyzwyczaić do myślenia, że obsługując terminal zawsze będziemy w jakimś katalogu. Czy to nasz katalog domowy czy katalog z filmami, nasze działania nie są odizolowane od świata. W tej sekcji przedstawię, jak oddziaływać na ten świat i jak się w nim swobodnie poruszać.
 
-\subsection{Domek czyli \ttbf{/home} sweet \ttbf{/home}}
+\subsection{Domek -- czyli \ttbf{/home} sweet \ttbf{/home}}
 \label{sec:homedir}
 
 \textbf{Katalog domowy} to katalog oddzielny dla każdego użytkownika, którego celem jest przechowywanie jego plików i dokumentów (czegokolwiek sobie zapragnie). Katalogi te znajdują się w katalogu \ttbf{/home} (czyli ``w domku``) i opatrzone są twoją nazwą użytkownika. Przykładowo, będąc zalogowanym jako \ttbf{user}, ścieżka naszego katalogu domowego to \ttbf{/home/user}
 
 Domyślnie, po otwarciu terminala, to w tym katalogu (znanym też jako $\sim$) będziemy się znajdować i w nim rozpoczniemy naszą podróż.
 
-\subsection{Gdzie jestem? - \ttbf{pwd}}
+\subsection{Gdzie jestem? -- \ttbf{pwd}}
 
 Najprostszą komendą, dzięki której nigdy się nie zgubisz, jest \ttbf{pwd} (ang. \textbf{p}rint \textbf{w}orking \textbf{d}irectory)
 
@@ -228,7 +230,7 @@ Jeśli czujecie się zagubieni, nie wiecie gdzie się znajdujecie lub na jakim k
 
 \dots i to wszystko, co ta komenda oferuje tbh.
 
-\subsection{Co jest w moim katalogu? - \ttbf{ls} i inne fafarstki}
+\subsection{Co jest w moim katalogu? -- \ttbf{ls} i inne fafarstki}
 \label{sec:ls}
 
 Polecenie służące do wypisywania plików i katalogów w danym katalogu. Bez podania żadnych argumentów wypisuje pliki w obecnym katalogu roboczym, czyli tym, w którym się aktualnie znajdujesz. Jedna z najważniejszych komend, jakie można znać na Linuxie.
@@ -243,12 +245,12 @@ Dzięki tej komendzie dowiemy się również, jak wygląda podstawowa struktura 
 
 \subsubsection{Niewidoczne rzeczy w katalogach}
 
-Katalogi w systemie Linux mogą zawierać wiele rzeczy, również takich domyślnie niewidocznych dla nas, zwykłych śmiertelników. Zwykle są to pliki konfiguracyjne, lub foldery zawierające takowe, których normalnie nie chcielibyście widzieć, bo tylko wchodzą w drogę, mają jednak wszystkie cechę wspólną - ich nazwa zaczyna się od ``\ttbf{.}``. Przykładowe pliki i katalogi to: \ttbf{.bashrc}, \ttbf{.cache}, \ttbf{.config}.
+Katalogi w systemie Linux mogą zawierać wiele rzeczy, również takich domyślnie niewidocznych dla nas, zwykłych śmiertelników. Zwykle są to pliki konfiguracyjne, lub foldery zawierające takowe, których normalnie nie chcielibyście widzieć, bo tylko wchodzą w drogę, mają jednak wszystkie cechę wspólną -- ich nazwa zaczyna się od ``\ttbf{.}``. Przykładowe pliki i katalogi to: \ttbf{.bashrc}, \ttbf{.cache}, \ttbf{.config}.
 
 Poza wspomnianymi katalogami i plikami konfiguracyjnymi (lub własnymi ukrytymi rzeczami) istnieją stałe 2 nazwy katalogów które należy zapamiętać:
 \begin{enumerate}
-    \item \ttbf{.} - oznacza aktualny katalog roboczy.
-    \item \ttbf{..} - oznacza katalog nadrzędny, ``wyższy`` w hierarchii.
+    \item \ttbf{.} -- oznacza aktualny katalog roboczy.
+    \item \ttbf{..} -- oznacza katalog nadrzędny, ``wyższy`` w hierarchii.
 \end{enumerate}
 
 Są to skróty, których celem jest umilenie Ci czasu. Dzięki nim, zamiast wpisywać całą ścieżkę pliku lub katalogu do jakiegoś polecenia, po prostu ich używasz.
@@ -259,21 +261,21 @@ Na przykład, jeśli znajdujesz się w katalogu \ttbf{Muzyka}, ale chcesz mieć 
 
 \dirtree{%
     .1 home.
-    .2 user.
-    .3 CLionProjects.
-    .3 Dokumenty.
-    .3 GOG Games.
-    .3 MultiMC.
-    .3 Muzyka.
-    .4 \DTcomment{{Tutaj jesteś}}.
-    .3 Obrazy.
-    .3 Pobrane.
-    .3 Publiczny.
-    .3 Pulpit.
-    .3 PycharmProjects.
-    .3 Szablony.
-    .3 Wideo.
-    .4 \DTcomment{Tu chcesz coś zrobić}.
+        .2 user.
+            .3 CLionProjects.
+            .3 Dokumenty.
+            .3 GOG Games.
+            .3 MultiMC.
+            .3 Muzyka.
+                .4 \DTcomment{{Tutaj jesteś}}.
+            .3 Obrazy.
+            .3 Pobrane.
+            .3 Publiczny.
+            .3 Pulpit.
+            .3 PycharmProjects.
+            .3 Szablony.
+            .3 Wideo.
+                .4 \DTcomment{Tu chcesz coś zrobić}.
 }\hfill
 
 Komenda ``\ttbf{ls .}`` będzie robić dokładnie to samo co zwykła komenda ``\ttbf{ls}``. Po prostu w tym drugim wypadku program się domyśla, że chodzi o kropkę.
@@ -348,7 +350,7 @@ drwxr-xr-x. 2 user user 4,0K 01-15 21:51  titles
 \end{verbatim}
 \end{enumerate}
 
-\subsection{Zmiana katalogu - \ttbf{cd}}
+\subsection{Zmiana katalogu -- \ttbf{cd}}
 \label{sec:cd}
 
 To najważniejsza i zarazem najprostsza komenda w tej całej sekcji. Dzięki niej zrobisz wszystko i nic.
@@ -386,7 +388,7 @@ Dokumenty       MultiMC      Obrazy   Publiczny   PycharmProjects   Wideo
     wrócimy do katalogu \emph{wyżej} (czyli w tym wypadku $\sim$).
 \end{enumerate}
 
-\subsection{Tworzenie katalogów - \ttbf{mkdir}}
+\subsection{Tworzenie katalogów -- \ttbf{mkdir}}
 
 \ttbf{mkdir} służy do tworzenia katalogów. To wszystko. Banalnie prosta komenda robiąca jedną rzecz ~-- coś do czego się musicie przyzwyczaić, bo takich jest wiele.
 
@@ -434,15 +436,15 @@ Po przyswojeniu tej całej wiedzy o przemieszczaniu się, warto byłoby mieć ja
 
 Przedstawię strukturę katalogów w znanej z poprzednich sekcji formie drzewka i dodam jakieś komentarze odnośnie tego jakich elementów można się spodziewać wewnątrz poszczególnych katalogów.
 
-\subsubsection{Katalog główny - \ttbf{/}}
+\subsubsection{Katalog główny -- \ttbf{/}}
 
 Katalogiem głównym nazywamy ``najwyższy`` katalog w hierarchii. Jego ścieżka to \ttbf{/}.
 
 Chciałbym nadmienić też dwie ważne rzeczy:
 
 \begin{enumerate}
-    \item Do części katalogów poza \ttbf{/home/user} możesz nie mieć dostępu. Pewne jest natomiast to, że pliki poza swoim katalogiem domowym będą raczej dostępne nam \textbf{wyłącznie tylko do odczytu}, co oznacza że nie będziesz w stanie zmienić ich treści bez odpowiednich \emph{uprawnień}. Jest to normalne, a powód i jego rozwiązanie odnajdziesz w rozdziale \nameref{sec:perms}
-    \item Ta struktura może się nieco różnić zależnie od dystrybucji. Postaram się jak najogólniej przedstawić temat, ale jeśli jakiegoś katalogu u Ciebie nie ma lub masz więcej to się nie bój.
+    \item Do części katalogów poza \ttbf{/home/user} możesz nie mieć dostępu. Pewne jest natomiast to, że pliki poza własnym katalogiem domowym będą raczej dostępne nam \textbf{wyłącznie tylko do odczytu}, co oznacza że nie będziesz w stanie zmienić ich treści bez odpowiednich \emph{uprawnień}. Jest to normalne, a powód i jego rozwiązanie odnajdziesz w rozdziale \nameref{sec:perms}.
+    \item Ta struktura może się nieco różnić zależnie od dystrybucji. Postaram się jak najogólniej przedstawić temat, ale jeśli jakiegoś katalogu u Ciebie nie ma, lub masz więcej, to się nie bój.
 \end{enumerate}
 
 \dirtree{%
@@ -546,30 +548,65 @@ Chciałbym nadmienić też dwie ważne rzeczy:
 
 \subsubsection{Katalog domowy}
 
-\section{Pliki - czyli wszystko co powiedziałem wcześniej było kłamstwem}
+Tutaj dowiesz się o części rzeczy zwykle domyślnie się znajdujących w \hyperref[sec:homedir]{katalogu domowym}. Jakie pliki i jakie katalogi za co odpowiadają. O plikach i jak nimi manipulować powiem więcej w sekcji \nameref{sec:files}, a tutaj pozostawię mapkę w celu lepszego rozeznania w terenie.
+
+\dirtree{%
+    .1 home.
+        .2 user.
+            .3 .bash\_history \dotfill \begin{minipage}[t]{0.5\textwidth}
+                \textnormal{To jest plik w którym zapisywane są twoje wszystkie komendy. Czasem możesz tam zajrzeć jeśli chcesz, chociaż nie wiem do końca po co.}
+                \vspace{\baselineskip}
+            \end{minipage}.
+            .3 .bashrc \dotfill \begin{minipage}[t]{0.5\textwidth}
+                \textnormal{Plika zawierający skrypty, których zadaniem jest ustawianie wartości domyślnych podczas uruchamiania.}
+                \vspace{\baselineskip}
+            \end{minipage}.
+            .3 .cache \dotfill \begin{minipage}[t]{0.5\textwidth}
+                \textnormal{W tym katalogu programy przechowują pliki do których potrzebują czasem dostępu. Może też zawierać starsze wersje aplikacji i inne fafarstki.}
+                \vspace{\baselineskip}
+            \end{minipage}.
+            .3 .config \dotfill \begin{minipage}[t]{0.5\textwidth}
+                \textnormal{W tym katalogu są pliki konfiguracyjne aplikacji dla danego użytkownika.}
+                \vspace{\baselineskip}
+            \end{minipage}.
+            .3 .local \dotfill \begin{minipage}[t]{0.5\textwidth}
+                \textnormal{Spełnia tą samą funkcję co \ttbf{/usr} ale dla jednego użytkownika.}
+                \vspace{\baselineskip}
+            \end{minipage}.
+                .4 bin.
+                .4 share.
+}\hfill
+
+\section{Pliki -- czyli wszystko co powiedziałem wcześniej było kłamstwem}
 \label{sec:files}
 
-We wcześniejszych sekcjach pisałem dużo o katalogach, nie byłem jednak do końca szczery. Tak na prawdę wszystko w Linuxie jest plikiem, nawet katalogi. Twój procesor? - plik. Twój RAM? - plik. Twoja myszka lub gładzik? - plik. Wiedza ta jest dość kluczowa do zrozumienia niektórych operacji (niekoniecznie w tym rozdziale ale ogólnie).
+We wcześniejszych sekcjach pisałem dużo o katalogach, nie byłem jednak do końca szczery. Tak na prawdę wszystko w Linuxie jest plikiem, nawet katalogi. Twój procesor? -- plik. Twój RAM? -- plik. Twoja myszka lub gładzik? -- plik. Wiedza ta jest dość kluczowa do zrozumienia niektórych operacji (niekoniecznie w tym rozdziale ale ogólnie).
 
-\subsection{Kopiowanie plików - \ttbf{cp}}
+\subsection{Kopiowanie plików -- \ttbf{cp}}
 
-\subsection{Przenoszenie i zmiana nazwy - \ttbf{mv}}
+\subsection{Przenoszenie i zmiana nazwy -- \ttbf{mv}}
 
-\subsection{Tworzenie nowych plików i zmiana dat - \ttbf{touch}}
+\subsection{Tworzenie nowych plików i zmiana dat -- \ttbf{touch}}
 
-\subsection{Usuwanie plików - \ttbf{rm}}
+\subsection{Usuwanie plików -- \ttbf{rm}}
 
-\subsection{Wypisywanie i łączenie treści plików - \ttbf{cat}}
+\subsection{Wypisywanie i łączenie treści plików -- \ttbf{cat}}
 
-\subsection{Czytanie pliku jak dokumentu - \ttbf{less}}
+\subsection{Czytanie pliku jak dokumentu -- \ttbf{less}}
 
-\subsection{Szukanie plików - \ttbf{find}}
+\subsection{Szukanie plików -- \ttbf{find}}
 
-\subsection{'Skróty' i dowiązania - \ttbf{ln}}
+\subsection{'Skróty' i dowiązania -- \ttbf{ln}}
 
-\section{Co mogę, a czego nie mogę - czyli uprawnienia}
+\subsection{Notatnik w terminalu -- \ttbf{nano}}
+
+\section{Co mogę, a czego nie mogę -- czyli uprawnienia}
 \label{sec:perms}
 
-\section{Arytmetyka rzeczy - czyli potoki i rury}
+\section{Arytmetyka rzeczy -- czyli potoki i rury}
+
+\section{Róbta co chcę -- czyli skrypty}
+
+\section{Istoty drzemiące w głębinach systemu -- czyli demony}
 
 \end{document}
