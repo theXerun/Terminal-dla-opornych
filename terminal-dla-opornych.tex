@@ -17,6 +17,14 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{titling}
+\usepackage{minted}
+\usemintedstyle{pastie}
+\setminted{
+    frame=lines,
+    framesep=0.5cm,
+    rulecolor=gray,
+    linenos
+}
 
 \usepackage{caption}
 \captionsetup[figure]{labelformat=empty}
@@ -56,7 +64,7 @@
     \selectfont
     {[}user@linux $\sim${]}\$} {
 
-    }
+}
 
 \newenvironment{bv}{
     \ttfamily
@@ -556,8 +564,6 @@ Chciałbym nadmienić też dwie ważne rzeczy:
         \end{minipage}.
 }\hfill
 
-%TODO more stuff, opis zawartości katalogów oraz struktura katalogu domowego
-
 \subsubsection{Katalog domowy}
 
 Tutaj dowiesz się o części rzeczy zwykle domyślnie się znajdujących w \hyperref[sec:homedir]{katalogu domowym}. Jakie pliki i jakie katalogi za co odpowiadają. O plikach i jak nimi manipulować powiem więcej w sekcji \nameref{sec:files}, a tutaj pozostawię mapkę w celu lepszego rozeznania w terenie.
@@ -594,6 +600,25 @@ Tutaj dowiesz się o części rzeczy zwykle domyślnie się znajdujących w \hyp
 
 We wcześniejszych sekcjach pisałem dużo o katalogach, nie byłem jednak do końca szczery. Tak na prawdę wszystko w Linuxie jest plikiem, nawet katalogi. Twój procesor? -- plik. Twój RAM? -- plik. Twoja myszka lub gładzik? -- plik. Wiedza ta jest dość kluczowa do zrozumienia niektórych operacji (niekoniecznie w tym rozdziale ale ogólnie).
 
+A teraz Cię podwójnie okłamałem, bo w rzeczywistości jest dokładnie jedna rzecz która nie jest plikiem w Linuxie i jest nią \hyperref[sec:process]{proces}. Ale o tym potem\dots
+
+\subsection{Rodzaje plików}
+
+Rozróżniamy z grubsza 3 rodzaje plików. Możemy zobaczyć jaki rodzaj ma dany plik przykładowo używając komendy \hyperref[sec:ls]{\ttbf{ls -l}}. Pierwszy znak pierwszej kolumny sygnalizuje nam typ.
+
+\begin{enumerate}
+    \item Zwykłe pliki (\ttbf{-}) -- Przykładowo są to pliki tekstowe, pliki binarne programu, pliki pdf itd. Ogólnie rzecz ujmując zbiór danych zapisanych na dysku.
+    \item Pliki katalogowe (\ttbf{d}) -- Są to pliki zawierające listę innych plików, to co dotychczas nazywaliśmy katalogami albo folderami.
+    \item Pliki specjalne
+    \begin{itemize}
+        \item Plik urządzenia blokowego (\ttbf{b}) -- plik specjalny reprezentujący urządzenie, do którego dostęp realizowany jest poprzez większe porcje danych zwane blokami.
+        \item Plik urządzenia znakowego (\ttbf{c}) -- plik specjalny reprezentujący urządzenie, do którego dostęp realizowany jest znak po znaku (bajt po bajcie).
+        \item Plik nazwanego potoku (\ttbf{p}) -- plik wymiany informacji między procesami, działający jako kolejka FIFO (first in first out).
+        \item Plik dowiązania symbolicznego (\ttbf{l}) -- plik wskazujący na inny plik
+        \item Plik gniazda (\ttbf{s}) -- plik wymiany między procesami.
+    \end{itemize}
+\end{enumerate}
+
 \subsection{Kopiowanie plików -- \ttbf{cp}}
 
 \subsection{Przenoszenie i zmiana nazwy -- \ttbf{mv}}
@@ -617,7 +642,47 @@ We wcześniejszych sekcjach pisałem dużo o katalogach, nie byłem jednak do ko
 
 \section{Arytmetyka rzeczy -- czyli potoki i rury}
 
+\section{Procesy -- czyli co się dzieje na moim systemie}
+\label{sec:process}
+
 \section{Róbta co chcę -- czyli skrypty}
+
+Skrypty skrypty skrypty\dots
+
+Bla bla bla wszystko tu jest WIP
+
+\subsection{Twój pierwszy skrypt -- \ttbf{Hello World!}}
+
+W pliku \ttbf{helloworld.sh}:
+
+\begin{minipage}[t]{0.5\textwidth}
+\inputminted{bash}{skrypty/helloworld.sh}
+\end{minipage}
+
+\begin{minipage}[t]{0.55\textwidth}
+\begin{console1}
+    chmod +x helloworld.sh
+\end{console1}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    Nadajemy \hyperref[sec:perms]{uprawnienia} egzekucji naszego skryptu.
+\end{minipage}
+
+\begin{console1}
+    ./helloworld.sh
+\end{console1}
+
+\ttbf{Hello World!}
+
+\subsection{Dodawanie czyli -- \ttbf{\$((...))}}
+
+\begin{minipage}[t]{0.49\textwidth}
+    \inputminted{bash}{skrypty/dodawanie.sh}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.45\textwidth}
+    Tworzę zmienną \ttbf{suma},
+
+\end{minipage}
 
 \section{Istoty drzemiące w głębinach systemu -- czyli demony}
 
