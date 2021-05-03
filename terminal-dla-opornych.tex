@@ -1,14 +1,24 @@
-\documentclass[12pt]{article}
+% !TEX program = xelatex
+
+\documentclass[11pt, a4paper]{article}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage[utf8]{inputenc}
-\usepackage[a4paper, top=3cm, bottom=3cm, left=2cm, right=2cm]{geometry}
+\usepackage{microtype}
+
+\usepackage{fontspec}
+\setmainfont{Source Serif 4}
+\setmonofont{Inconsolata}
+
+\usepackage[top=3cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
 \usepackage{graphicx}
 \graphicspath{ {./screeny/} }
+
 \usepackage{subfig}
 \usepackage{float}
 \usepackage{booktabs}
+
 \usepackage[english, polish]{babel}
+\usepackage{polski}
+
 \usepackage{dirtytalk}
 \usepackage{blindtext}
 \usepackage{xcolor}
@@ -39,19 +49,19 @@
     urlcolor=blue
 }
 
-\setlength{\parskip}{\baselineskip}
-
+\setlength{\parskip}{10pt}
+%\renewcommand{\baselinestretch}{1.1}
 \setlength\parindent{0pt}
-%\setlength\parskip{10pt}
 
 \pagestyle{fancy}
 \setlength{\headheight}{15pt}
 \fancyhf{}
 \lhead{\rightmark}
-\lfoot{\theauthor}
-\rfoot{\thepage \hspace{1pt} / \pageref{LastPage}}
+\rhead{\thepage}
 
-\renewcommand{\footrulewidth}{0.5pt}
+%\renewcommand{\footrulewidth}{0.5pt}
+
+\frenchspacing
 
 \newcommand{\ttbf}[1]{
     \texttt{\textbf{#1}}
@@ -168,22 +178,25 @@ Może się to okazać przydatne, jeśli wyjaśnienie interesującej Cię komendy
 
 Zależnie od dystrybucji możecie się spotkać z różnymi nazwami aplikacji emulujących terminal. Aby wam ułatwić znalezienie odpowiedniej aplikacji wypiszę nazwy, pod którymi może się ona kryć:
 
-\begin{itemize}
-    \item Terminal
-    \item Konsole
-    \item Terminator
-    \item Yakuake
-    \item Kitty
-    \item xterm
-\end{itemize}
-
-\begin{figure}[H]
-    \centering
-    \subfloat[Ikony aplikacji 'Terminal']{\includesvg[height=2.5cm]{src_fullcolor_legacy_terminals.svg}}
-    \quad
-    \subfloat['Konsole']{\includesvg[height=2.5cm]{utilities-terminal.svg}}
-    \caption{Przykładowe ikony}
-\end{figure}
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{itemize}
+        \item Terminal
+        \item Konsole
+        \item Terminator
+        \item Yakuake
+        \item Kitty
+        \item xterm
+    \end{itemize}
+\end{minipage}%
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{figure}[H]
+        \centering
+        \subfloat[Ikony aplikacji 'Terminal']{\includesvg[height=2cm]{src_fullcolor_legacy_terminals.svg}}
+        \quad
+        \subfloat['Konsole']{\includesvg[height=2cm]{utilities-terminal.svg}}
+        \caption{}
+    \end{figure}
+\end{minipage}
 
 Po uruchomieniu terminala możecie być słusznie lekko zagubieni. Spotykacie się z jakimiś nazwami w nawiasach, jakimś dolarem i migającym kursorem. Wyjaśnię więc wszystko od początku \dots
 
@@ -259,7 +272,7 @@ Komenda nie jest trudna, jej nazwa może też się kojarzyć z angielskim słowe
 
 \ttbf{ls \emph{-opcje} \emph{katalog}}
 
-I jak już wcześniej wspominałem, nie wpisując argumentu \texttt{\emph{katalog}} otrzymamy wynik dla obecnego katalogu roboczego.
+I jak już wcześniej wspominałem, nie wpisując argumentu \ttbf{\emph{katalog}} otrzymamy wynik dla obecnego katalogu roboczego.
 
 Dzięki tej komendzie dowiemy się również, jak wygląda podstawowa struktura katalogu, co w nim jest, jakie są tutaj typy danych itd.
 
@@ -576,7 +589,7 @@ Tutaj dowiesz się o części rzeczy zwykle domyślnie się znajdujących w \hyp
                 \vspace{\baselineskip}
             \end{minipage}.
             .3 .bashrc \dotfill \begin{minipage}[t]{0.5\textwidth}
-                \textnormal{Plika zawierający skrypty, których zadaniem jest ustawianie wartości domyślnych podczas uruchamiania.}
+                \textnormal{Plik zawierający skrypty, których zadaniem jest ustawianie wartości domyślnych podczas uruchamiania.}
                 \vspace{\baselineskip}
             \end{minipage}.
             .3 .cache \dotfill \begin{minipage}[t]{0.5\textwidth}
