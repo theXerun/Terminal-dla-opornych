@@ -16,7 +16,7 @@
 \usepackage{float}
 \usepackage{booktabs}
 
-\usepackage[english, polish]{babel}
+\usepackage[polish]{babel}
 \usepackage{polski}
 
 \usepackage{dirtytalk}
@@ -32,8 +32,7 @@
 \setminted{
     frame=lines,
     framesep=0.5cm,
-    rulecolor=gray,
-    linenos
+    rulecolor=gray
 }
 
 \usepackage{caption}
@@ -67,12 +66,17 @@
     \texttt{\textbf{#1}}
 }
 
-\newenvironment{console1}
+\usepackage{tcolorbox}
+
+\newenvironment{console1}[1][$\sim$]
 {
+    \begin{tcolorbox}
     \ttfamily
     \fontseries{b}
     \selectfont
-    {[}user@linux $\sim${]}\$} {
+    {[}user@linux #1{]}\$ } {
+    
+    \end{tcolorbox}
 
 }
 
@@ -86,7 +90,7 @@
 
 \title{Obsługa terminalu dla opornych}
 \author{Xerun\#0773}
-\date{\today}
+\date{Ostatnia modyfikacja\break \today}
 
 \begin{document}
 
@@ -102,6 +106,7 @@
     \break % page break
 \end{titlepage}
 
+\thispagestyle{empty}
 \section*{O czym jest ten dokument?}
     W tym dokumencie postaram się w sposób przystępny przekazać tajniki działania terminala w systemie Linux. Pokażę, że nie jest to nic strasznego i nie trzeba się tego bać. Terminal jest bardzo przydatnym narzędziem, które tylko wygląda nieprzystępnie. Dodatkowo ten dokument może funkcjonować jako baza wiedzy o pewnych komendach i ich prostych przykładach, do której można zajrzeć w dowolnym momencie. Dla ułatwienia takiego użytkowania można skorzystać ze spisu treści, którego elementy po kliknięciu powinny zaprowadzić Cię do odpowiedniego fragmentu. Warto też wspomnieć, że Twój system może się różnić lekko od mojego, więc nie wszystko musi działać lub wyglądać tak samo. Postaram się podawać alternatywy (jeśli takie znam) w przypadku, gdy z jakiegoś powodu dla Ciebie dana komenda nie działa.
 
@@ -170,7 +175,9 @@ Taka budowa ma również skutki dla twórców oprogramowania -- umożliwia to na
 
 Warto wiedzieć, że do niemalże każdej komendy na systemie Linux istnieje wbudowana instrukcja obsługi, do której dostać się można za pomocą polecenia:
 
-\ttbf{man \emph{nazwa\_komendy}}
+\begin{tcolorbox}
+    \ttbf{man \emph{nazwa\_komendy}}
+\end{tcolorbox}
 
 Może się to okazać przydatne, jeśli wyjaśnienie interesującej Cię komendy nie istnieje w tym dokumencie, lub uznasz, że obecne nie jest dla Ciebie wystarczające. Nazwa \ttbf{man} \emph{prawdopodobnie} pochodzi od słowa ``manual``, ale kto wie tbh, równie dobrze może oznaczać człowieka. Do dziś nie wiadomo do końca co poeta miał na myśli. W moim wypadku instrukcje serwowane są w języku angielskim, na niektórych dystrybucjach jednak istnieje również wersja polska tych tekstów.
 
@@ -250,15 +257,20 @@ Jeśli czujecie się zagubieni, nie wiecie gdzie się znajdujecie lub na jakim k
 \subsubsection{Przykłady}
 
 \begin{enumerate}
-    \item \begin{console1}
-        pwd
+    \item Adres katalogu domowego.
+    \begin{console1}
+    pwd
+
+    /home/user
+    \end{console1}
+
+    \item Adres katalogu Wideo.
+    \begin{console1}[Wideo]
+    pwd
+
+    /home/user/Wideo
     \end{console1}
     
-    \texttt{/home/user}
-
-    \item \ttbf{[user@linux Wideo]\$ pwd}
-
-    \texttt{/home/user/Wideo}
 \end{enumerate}
 
 \dots i to wszystko, co ta komenda oferuje tbh.
@@ -416,7 +428,9 @@ Dokumenty       MultiMC      Obrazy   Publiczny   PycharmProjects   Wideo
 
     \item A po wpisaniu:
 
-    \ttbf{[user@linux Wideo]\$ cd ..}
+    \begin{console1}
+        cd ..
+    \end{console1}
     
     wrócimy do katalogu \emph{wyżej} (czyli w tym wypadku $\sim$).
 \end{enumerate}
@@ -482,96 +496,96 @@ Chciałbym nadmienić też dwie ważne rzeczy:
 
 \dirtree{%
     .1 /.
-        .2 bin \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 bin \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Zawiera zbiór programów udostępnionym wszystkim użytkownikom systemu (np. \ttbf{ls} lub \ttbf{cd}).}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 boot \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 boot \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Katalog ten zawiera większość programów wymaganych podczas rozruchu systemu Linux.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 dev \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 dev \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Katalog ten zawiera pliki urządzeń i inne pliki specjalne. Tutaj znajdziemy na przykład pliki reprezentujące nasz procesor, ram, dyski i inne elementy komputera\dots powiem o tym więcej w \nameref{sec:files}}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 etc \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 etc \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Tutaj znajdują się pliki konfiguracyjne systemu i usług.}
             \vspace{\baselineskip}
         \end{minipage}.
-            .3 passwd \dotfill \begin{minipage}[t]{0.5\textwidth}
+            .3 passwd \dotfill \begin{minipage}[t]{0.7\textwidth}
                 \textnormal{Przykładowym plikiem może być \texttt{passwd}, który przechowuje dane dotyczące różnych użytkowników albo innych istot.}
                 \vspace{\baselineskip}
             \end{minipage}.
-        .2 home \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 home \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{To jest domek o którym już wspomniałem tutaj: \nameref{sec:homedir}. W skrócie znajdują się tutaj katalogi należące dla użytkowników systemu, w których mogą przechowywać swoje pliki.}
             \vspace{\baselineskip}
         \end{minipage}.
             .3 user.
-        .2 lib \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 lib \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Katalog, w którym znajdują się \emph{biblioteki dzielone}, zawierające funkcje dzielone przez wiele programów.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 lib64 \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 lib64 \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{To samo co wyżej ale w 64 bitach.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 lost+found \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 lost+found \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{System w tym miejscu przechowuje pliki odnalezione podczas wykonywania testów dysku. }
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 media \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 media \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Katalog zawierający pliki z urządzeń (np. pendrive, dodatkowe dyski twarde) montowanych automatycznie.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 mnt \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 mnt \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{To samo co wyżej, ale nie montowanych automatycznie.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 opt \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 opt \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Zawiera programy, których kod, dane i konfiguracja znajdują się w jednym katalogu.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 proc \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 proc \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Wirtualny katalog, który pozwala na komunikację z jądrem  systemu (proszę nie tykać).}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 root \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 root \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Katalog domowy administratora systemu.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 run \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 run \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Zawiera dane wykonawcze programów uruchamianych podczas wczesnego startu systemu.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 sbin \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 sbin \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Przechowuje on najważniejsze dla systemu operacyjnego pliki wykonywalne, przeznaczone do użycia przez niego samego lub administratora systemu.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 srv \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 srv \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Zawiera dane dla usług (serwerów) udostępnianych przez system.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 sys \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 sys \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Sam nie wiem tbh. nikt nie pamięta o istnieniu tego katalogu.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 tmp \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 tmp \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Zawiera pliki tymczasowe.}
             \vspace{\baselineskip}
         \end{minipage}.
-        .2 usr \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 usr \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Zawiera dodatkowe programy, które umożliwiają pracę zwykłemu użytkownikowi systemu.}
             \vspace{\baselineskip}
         \end{minipage}.
-            .3 bin \dotfill \begin{minipage}[t]{0.5\textwidth}
+            .3 bin \dotfill \begin{minipage}[t]{0.7\textwidth}
                 \textnormal{Kod tych programów.}
                 \vspace{\baselineskip}
             \end{minipage}.
-            .3 share \dotfill \begin{minipage}[t]{0.5\textwidth}
+            .3 share \dotfill \begin{minipage}[t]{0.7\textwidth}
                 \textnormal{Dane tych programów}
                 \vspace{\baselineskip}
             \end{minipage}.
-        .2 var \dotfill \begin{minipage}[t]{0.5\textwidth}
+        .2 var \dotfill \begin{minipage}[t]{0.7\textwidth}
             \textnormal{Służy do przechowywania wszystkich zmieniających się danych, jak artykuły grup dyskusyjnych, poczta elektroniczna, strony WWW itp.}
             \vspace{\baselineskip}
         \end{minipage}.
@@ -584,23 +598,23 @@ Tutaj dowiesz się o części rzeczy zwykle domyślnie się znajdujących w \hyp
 \dirtree{%
     .1 home.
         .2 user.
-            .3 .bash\_history \dotfill \begin{minipage}[t]{0.5\textwidth}
+            .3 .bash\_history \dotfill \begin{minipage}[t]{0.7\textwidth}
                 \textnormal{To jest plik w którym zapisywane są twoje wszystkie komendy. Czasem możesz tam zajrzeć jeśli chcesz, chociaż nie wiem do końca po co.}
                 \vspace{\baselineskip}
             \end{minipage}.
-            .3 .bashrc \dotfill \begin{minipage}[t]{0.5\textwidth}
+            .3 .bashrc \dotfill \begin{minipage}[t]{0.7\textwidth}
                 \textnormal{Plik zawierający skrypty, których zadaniem jest ustawianie wartości domyślnych podczas uruchamiania.}
                 \vspace{\baselineskip}
             \end{minipage}.
-            .3 .cache \dotfill \begin{minipage}[t]{0.5\textwidth}
+            .3 .cache \dotfill \begin{minipage}[t]{0.7\textwidth}
                 \textnormal{W tym katalogu programy przechowują pliki do których potrzebują czasem dostępu. Może też zawierać starsze wersje aplikacji i inne fafarstki.}
                 \vspace{\baselineskip}
             \end{minipage}.
-            .3 .config \dotfill \begin{minipage}[t]{0.5\textwidth}
+            .3 .config \dotfill \begin{minipage}[t]{0.7\textwidth}
                 \textnormal{W tym katalogu są pliki konfiguracyjne aplikacji dla danego użytkownika.}
                 \vspace{\baselineskip}
             \end{minipage}.
-            .3 .local \dotfill \begin{minipage}[t]{0.5\textwidth}
+            .3 .local \dotfill \begin{minipage}[t]{0.7\textwidth}
                 \textnormal{Spełnia tą samą funkcję co \ttbf{/usr} ale dla jednego użytkownika.}
                 \vspace{\baselineskip}
             \end{minipage}.
@@ -672,14 +686,12 @@ W pliku \ttbf{helloworld.sh}:
 \inputminted{bash}{skrypty/helloworld.sh}
 \end{minipage}
 
-\begin{minipage}[t]{0.55\textwidth}
+Nadajemy \hyperref[sec:perms]{uprawnienia} egzekucji naszego skryptu:
+
 \begin{console1}
     chmod +x helloworld.sh
 \end{console1}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.45\textwidth}
-    Nadajemy \hyperref[sec:perms]{uprawnienia} egzekucji naszego skryptu.
-\end{minipage}
+
 
 \begin{console1}
     ./helloworld.sh
